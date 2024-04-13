@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Kue Online</title>
+    <style>
+        /* CSS styling untuk desain sederhana */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        nav {
+            background-color: #343a40;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .product {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .product img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>VALLERY BAKERY</h1>
+    </header>
+    <nav>
+        <a href="#">Beranda</a>
+        <a href="#">Produk</a>
+        <a href="#">Kontak</a>
+        <a href="#">Menu</a>
+    </nav>
+    <div class="container">
+        <div class="product">
+            <img src="https://assets.promediateknologi.id/crop/0x0:0x0/250x250/webp/photo/2023/06/25/pexels-veer-sajid-15580728-2104562700.jpg" alt="Kue 1">
+            <h2>Kue Coklat</h2>
+            <p>Harga: Rp50.000</p>
+            <button>Beli Sekarang</button>
+        </div>
+        <div class="product">
+            <img src="data:image/jpeg;base64,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" alt="Kue 2">
+            <h2>Kue Nastar</h2>
+            <p>Harga: Rp25.000</p>
+            <button>Beli Sekarang
+
+            </button>
+        </div>
+        <div> 
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW2waQjrHGKuNDJwhq-jNFAmzauenLXO7vKA&s" alt="Kue 3">
+            <h3>Kue Strawberry</h3>
+            <p>Harga: Rp45.000</p>
+            <button>Beli Sekarang</button>
+        <!-- tambahkan lebih banyak produk di sini -->
+    </div>
+    <footer>
+        <div class="container">
+            <p>Hak Cipta &copy; 2024 Toko Kue Online</p>
+        </div>
+    </footer>
+</body>
+</html>
